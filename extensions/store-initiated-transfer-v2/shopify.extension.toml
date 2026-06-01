@@ -1,0 +1,21 @@
+# The version of APIs your extension will receive. Learn more:
+# https://shopify.dev/docs/api/usage/versioning
+api_version = "unstable"
+
+[[extensions]]
+uid = "f9db317e-0712-21e5-2f03-f7722ba9d61ba1953e34"
+type = "ui_extension"
+name = "storeInitiatedTransferV2"
+
+handle = "storeinitiatedtransferv2"
+description = "A react POS UI extension"
+
+# Controls where in POS your extension will be injected,
+# and the file that contains your extension’s source code.
+[[extensions.targeting]]
+module = "./src/Tile.jsx"
+target = "pos.home.tile.render"
+
+[[extensions.targeting]]
+module = "./src/Modal.jsx"
+target = "pos.home.modal.render"
