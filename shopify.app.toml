@@ -3,11 +3,11 @@
 client_id = "2e8d6be72dc9ad603a40e5d4c2e9bdf7"
 name = "storeInitiatedTransferV2"
 handle = "storeinitiatedtransferv2"
-application_url = "https://surfing-conferences-ted-tour.trycloudflare.com"
+application_url = "https://store-initiated-transfer-v2.onrender.com"
 embedded = true
 
 [build]
-automatically_update_urls_on_dev = true
+automatically_update_urls_on_dev = false
 
 [webhooks]
 api_version = "2025-07"
@@ -25,7 +25,7 @@ api_version = "2025-07"
 scopes = "write_products,read_locations, read_inventory, write_inventory_transfers"
 
 [auth]
-redirect_urls = ["https://surfing-conferences-ted-tour.trycloudflare.com/auth/callback", "https://surfing-conferences-ted-tour.trycloudflare.com/auth/shopify/callback", "https://surfing-conferences-ted-tour.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://store-initiated-transfer-v2.onrender.com/auth/callback", "https://store-initiated-transfer-v2.onrender.com/auth/shopify/callback", "https://store-initiated-transfer-v2.onrender.com/api/auth/callback"]
 
 [pos]
 embedded = true

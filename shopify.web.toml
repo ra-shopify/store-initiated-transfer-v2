@@ -3,5 +3,5 @@ roles = ["frontend", "backend"]
 webhooks_path = "/webhooks/app/uninstalled"
 
 [commands]
-predev = "npx prisma generate"
-dev = "npx prisma migrate deploy && npm exec remix vite:dev"
+predev = "pnpm exec prisma generate"
+dev = "pnpm exec prisma migrate deploy && pnpm exec remix vite:dev"
